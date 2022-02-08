@@ -5,6 +5,12 @@ h5 {
   font-family: 'Poppins-Bold';
 }
 
+h2,
+h3,
+h5 {
+  color: $black;
+}
+
 h1 {
   font-size: $font-size-base * 2.5;
   line-height: $line-height-base * 2;
@@ -21,4 +27,11 @@ h3 {
 h5 {
   font-size: $font-size-base * 0.75;
   text-transform: uppercase;
+}
+
+p {
+  font-family: 'Roboto-Regular';
+  font-size: inherit;
+  line-height: $line-height-base;
+  color: $grey1;
 }

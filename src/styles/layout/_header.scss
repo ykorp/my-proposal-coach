@@ -1,9 +1,11 @@
 .header-navigation {
   height: 112px;
+  max-width: 160rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+  margin: 0 auto;
   padding: 24px 60px;
 
   .logo {
@@ -36,12 +38,8 @@
   }
 
   .button {
-    font-family: 'Roboto-Medium';
     font-size: $font-size-base * 0.875;
     line-height: $line-height-base * 0.86;
     padding: 12px 48px;
-    color: $white;
-    background-color: $primary;
-    border-radius: 4px;
   }
 }

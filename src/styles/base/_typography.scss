@@ -1,0 +1,24 @@
+h1,
+h2,
+h3,
+h5 {
+  font-family: 'Poppins-Bold';
+}
+
+h1 {
+  font-size: $font-size-base * 2.5;
+  line-height: $line-height-base * 2;
+}
+
+h2 {
+  font-size: $font-size-base * 2;
+}
+
+h3 {
+  font-size: $font-size-base * 1.5;
+}
+
+h5 {
+  font-size: $font-size-base * 0.75;
+  text-transform: uppercase;
+}

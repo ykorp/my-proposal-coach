@@ -1,0 +1,47 @@
+.header-navigation {
+  height: 112px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 24px 60px;
+
+  .logo {
+    margin-right: auto;
+  }
+
+  nav {
+    ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .nav-item  {
+      font-family: 'Roboto-Medium';
+      font-size: $font-size-base * 0.875;
+      display: inline;
+      color: $grey1;
+      margin-right: 48px;
+      transition: color .25s;
+
+      &.active {
+        color: $primary;
+      }
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+
+  .button {
+    font-family: 'Roboto-Medium';
+    font-size: $font-size-base * 0.875;
+    line-height: $line-height-base * 0.86;
+    padding: 12px 48px;
+    color: $white;
+    background-color: $primary;
+    border-radius: 4px;
+  }
+}

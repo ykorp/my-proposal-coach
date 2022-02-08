@@ -1,17 +1,10 @@
-@font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Regular.ttf');
-}
+@import 'base/variables';
+@import 'base/reset';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/fonts';
 
-@font-face {
-  font-family: 'Poppins';
-  src: url('../fonts/Poppins-Regular.ttf');
-}
-
-@import 'variables';
-@import 'reset';
-@import 'base';
-
-h1 {
-  font-family: $font-family;
-}
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/footer';

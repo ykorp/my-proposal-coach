@@ -1,0 +1,9 @@
+.desktop-hide {
+  display: block;
+}
+
+@include bp(desktop) {
+  .desktop-hide {
+    display: none;
+  }
+}

@@ -1,31 +1,29 @@
 .contacts-section {
-  padding: 120px 24px 100px;
+  padding: 48px 24px;
   background-color: $secondary-darker;
   text-align: center;
 
   h3 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: $white;
   }
 
   h5 {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     color: $white;
   }
 
   p {
-    max-width: 510px;
-    margin: 0 auto 90px;
-    font-size: $font-size-base * 0.875;
-    line-height: $line-height-base * 0.857;
+    margin-bottom: 40px;
+    font-size: $font-size-base * 0.75;
+    line-height: $line-height-base * 0.57;
     color: $white;
     opacity: 0.6;
   }
 
   .contacts-columns {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
 
     .small-letters {
       font-size: $font-size-base * 0.75;
@@ -34,7 +32,7 @@
   }
 
   .contact-column {
-    flex: 1;
+    margin-bottom: 48px;
 
     &.social {
       h5 {
@@ -45,8 +43,8 @@
 
   .contact-detail {
     font-family: 'Poppins-Bold';
-    font-size: $font-size-base * 1.25;
-    line-height: $line-height-base * 1.14;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
     color: $primary;
     text-decoration: underline;
   }
@@ -78,13 +76,14 @@
 }
 
 .footer-navigation-section {
-  padding: 48px 24px;
+  padding: 24px;
   background-color: $grey4;
 
   .container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 
     p,
     a {
@@ -93,11 +92,13 @@
 
     p {
       color: $grey2;
+      margin-bottom: 24px;
     }
 
     .footer-navigation {
       ul {
         display: flex;
+        flex-direction: column;
       }
     }
 
@@ -108,8 +109,71 @@
 
     li {
       &:not(:last-of-type) {
-        margin-right: 48px;
+        margin-bottom: 12px;
       }
     }
   }
+}
+
+@include bp(desktop) {
+  .contacts-section {
+    padding: 120px 24px 100px;
+
+    h3 {
+      margin-bottom: 20px;
+    }
+
+    h5 {
+      margin-bottom: 25px;
+    }
+
+    p {
+      max-width: 510px;
+      margin: 0 auto 90px;
+      font-size: $font-size-base * 0.875;
+      line-height: $line-height-base * 0.857;
+    }
+
+    .contacts-columns {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .contact-column {
+      flex: 1;
+      margin-bottom: 0;
+    }
+
+    .contact-detail {
+      font-size: $font-size-base * 1.25;
+      line-height: $line-height-base * 1.14;
+    }
+  }
+
+  .footer-navigation-section {
+    padding: 48px 24px;
+
+    .container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      p {
+        margin-bottom: 0;
+      }
+  
+      .footer-navigation {
+        ul {
+          flex-direction: row;
+        }
+      }
+
+      li {
+        &:not(:last-of-type) {
+          margin-bottom: 0;
+          margin-right: 48px;
+        }
+      }
+    }
+  }  
 }

@@ -167,6 +167,56 @@
   }
 }
 
+.about-section {
+  padding: 48px 24px;
+
+  h2 {
+    margin-bottom: 8px;
+  }
+
+  .left-column {
+    p {
+      margin-bottom: 45px;
+    }
+
+    .image-content {
+      margin-bottom: 37px;
+    }
+  }
+
+  .right-column {
+    .image-content {
+      margin-bottom: 32px;
+    }
+  }
+
+  .image-content {
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      background-image: url('~assets/dots.png');
+      width: 146px;
+      height: 146px;
+      position: absolute;
+      top: -24px;
+      right: -24px;
+    }
+  }
+
+  .quote {
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    color: $black;
+    margin-bottom: 24px;
+
+    span {
+      color: $primary;
+    }
+  }
+}
+
 @include bp(desktop) {
   .hero-section {
     min-height: 745px;
@@ -344,6 +394,10 @@
       flex-basis: 46%;
       padding: 0 70px 0 0;
 
+      .image-content {
+        margin-bottom: 0;
+      }
+
       p {
         margin-bottom: 120px;
       }
@@ -366,12 +420,8 @@
       position: relative;
 
       &::before {
-        content: '';
-        display: block;
-        background-image: url('~assets/dots.png');
         width: 240px;
         height: 240px;
-        position: absolute;
         top: -40px;
         right: -40px;
       }
@@ -380,12 +430,7 @@
     .quote {
       font-size: $font-size-base * 1.5;
       line-height: $line-height-base * 1.43;
-      color: $black;
       margin-bottom: 40px;
-
-      span {
-        color: $primary;
-      }
     }
   }  
 }

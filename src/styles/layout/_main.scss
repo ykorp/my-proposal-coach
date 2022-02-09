@@ -1,7 +1,10 @@
 .hero-section {
   min-height: 512px;
   padding: 32px 24px 0;
-  background: center / cover no-repeat url('~assets/hero-background.jpg');
+  background-image: url('~assets/hero-background.jpg');
+  background-position-x: 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   h1 {
     margin-bottom: 32px;
@@ -221,6 +224,7 @@
   .hero-section {
     min-height: 745px;
     padding-top: 105px;
+    background-position-x: 50%;
 
     .hero-text-content {
       max-width: 560px;

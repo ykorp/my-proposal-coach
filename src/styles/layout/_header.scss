@@ -2,7 +2,7 @@
   height: 96px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -15,6 +15,7 @@
 
   nav {
     order: 2;
+    margin-top: 16px;
 
     ul {
       display: flex;
@@ -22,11 +23,14 @@
       align-items: center;
     }
 
+    li:not(:last-of-type) {
+      margin-right: 28px;
+    }
+
     .nav-item  {
       font-family: 'Roboto-Medium';
       font-size: $font-size-base * 0.875;
       display: inline;
-      margin-right: 33px;
       color: $grey1;
 
       &.active {
@@ -37,7 +41,6 @@
     
   .button {
     order: 1;
-    margin-left: auto;
     font-size: $font-size-base * 0.875;
     line-height: $line-height-base * 0.86;
     padding: 4px 24px;
@@ -46,6 +49,7 @@
 
 @include bp(desktop) {
   .header-navigation {
+    justify-content: flex-start;
     flex-wrap: no-wrap;
     height: 112px;
     max-width: 160rem;
@@ -59,9 +63,13 @@
   
     nav {
       order: 1;
+      margin-top: 0;
+
+      li {
+        margin-right: 48px;
+      }
 
       .nav-item  {
-        margin-right: 48px;
         transition: color .25s;
   
         &:hover {
@@ -72,7 +80,7 @@
   
     .button {
       order: 2;
-      margin-left: 0;
+      margin: 0;
       padding: 12px 48px;
     }
   }  

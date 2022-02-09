@@ -114,10 +114,13 @@
 
   .container {
     max-width: 104rem;
+    position: relative;
   }
 
   h3 {
     margin-bottom: 64px;
+    position: relative;
+    z-index: 1;
   }
 
   .testimonials-carousel-container {
@@ -178,6 +181,7 @@
     width: 110px;
     height: 48px;
     margin: 0 auto;
+    position: relative;
 
     .carousel-control {
       display: flex;
@@ -204,15 +208,15 @@
 }
 
 .about-section {
-  padding: 160px 0;
+  padding: 160px 20px;
 
   h2 {
     margin-bottom: 40px;
   }
 
   .left-column {
-    max-width: 460px;
-    padding: 0;
+    flex-basis: 46%;
+    padding: 0 70px 0 0;
 
     p {
       margin-bottom: 120px;
@@ -220,10 +224,15 @@
   }
 
   .right-column {
-    padding: 0 0 0 140px;
+    flex-basis: 55%;
+    padding: 0 0 0 70px;
 
     .image-content {
       margin-bottom: 90px;
+    }
+
+    p {
+      max-width: 455px;
     }
   }
 

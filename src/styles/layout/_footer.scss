@@ -147,6 +147,19 @@
     .contact-detail {
       font-size: $font-size-base * 1.25;
       line-height: $line-height-base * 1.14;
+      transition: opacity .25s;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+
+    .social-icon {
+      transition: opacity .25s;
+
+      &:hover {
+        opacity: 0.9;
+      }
     }
   }
 
@@ -172,6 +185,14 @@
         &:not(:last-of-type) {
           margin-bottom: 0;
           margin-right: 48px;
+        }
+
+        a {
+          transition: opacity .25s;
+
+          &:hover {
+            opacity: 0.6;
+          }
         }
       }
     }

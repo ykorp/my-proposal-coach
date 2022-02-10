@@ -15,11 +15,13 @@
 
   nav {
     order: 2;
+    width: 100vw;
     margin-top: 16px;
 
     ul {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
       align-items: center;
     }
 
@@ -63,10 +65,11 @@
   
     nav {
       order: 1;
+      width: auto;
       margin-top: 0;
 
-      li {
-        margin-right: 48px;
+      li:not(:last-of-type) {
+        margin-right: 50px;
       }
 
       .nav-item  {
@@ -81,6 +84,7 @@
     .button {
       order: 2;
       margin: 0;
+      margin-left: 50px;
       padding: 12px 48px;
     }
   }  
